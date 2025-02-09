@@ -1,0 +1,269 @@
+<DOCTYPE html>
+    <html>
+        <head>
+            <title>
+                Bring it!
+            </title>
+            <link rel="Stylesheet" href="./Index.css">
+           
+            
+        </head>
+        
+        <body>
+            <div class="navbg">
+                <nav class="nav">
+                    <h1>Bring it!</h1>
+                    <ul class="nav-links">
+                        <li>Home</li>
+                        <li>Orders</li>
+                        <li>Cart</li>
+                    </ul>
+                    <div class="location">
+                        <span class="location-icon">
+                            <iconify-icon icon="./tdesign--location-filled.png"></iconify-icon>
+                        </span>
+                        <span class="location-text">Sanjivani College Kopargaon</span>
+                        <span class="dropdown-icon">
+                            <iconify-icon icon="./tdesign--location-filled.png"></iconify-icon>
+                        </span>
+                    </div>
+                </nav>
+            </div>
+            
+            <style>
+                .slider {
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;
+                   margin-top:60px ;
+                    text-align: center;
+                    z-index: -2;
+                    
+                }
+                .slides {
+                    display: flex;
+                    width: 100%;
+                    transition: transform 0.5s ease-in-out;
+                }
+                .slides img {
+                    width: 100%;
+                    height: auto;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="slider">
+                <div class="slides">
+                    <img src="./IMG/img1.png" alt="Slide 1">
+                    <img src="./IMG/Img02.png" alt="Slide 2">
+                    <img src="./IMG/img03.png" alt="Slide 3">
+                </div>
+            </div>
+        
+            <script>
+                let index = 0;
+                function slideShow() {
+                    const slides = document.querySelector('.slides');
+                    index = (index + 1) % 3; // Change 3 to total number of slides
+                    slides.style.transform = `translateX(${-index * 100}%)`;
+                }
+                setInterval(slideShow, 2000); // Change slide every 2 seconds
+            </script>
+
+            
+
+            <h2 class="Prev">Previously Ordered</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="./IMG/Shreyash Bhagwat Pic.png" alt="Product 1">
+                    <h3>Ashirvaad Ata</h3>
+                    <p>Ashirvaad Ata 1KG</p>
+                    <div class="price">
+                        <span class="new-price">₹49</span>
+                        <span class="old-price">₹99</span>
+                    </div>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            
+                <div class="card">
+                    <img src="./IMG/Shreyash Bhagwat Pic.png" alt="Product 2">
+                    <h3>Ashirvaad Ata</h3>
+                    <p>Ashirvaad Ata 1KG</p>
+                    <div class="price">
+                        <span class="new-price">₹49</span>
+                        <span class="old-price">₹99</span>
+                    </div>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            
+                <div class="card">
+                    <img src="./IMG/Shreyash Bhagwat Pic.png" alt="Product 3">
+                    <h3>Ashirvaad Ata</h3>
+                    <p>Ashirvaad Ata 1KG</p>
+                    <div class="price">
+                        <span class="new-price">₹49</span>
+                        <span class="old-price">₹99</span>
+                    </div>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            
+                <!-- Repeat above structure for more cards -->
+            
+                <div class="card">
+                    <img src="./IMG/Shreyash Bhagwat Pic.png" alt="Product 4">
+                    <h3>Ashirvaad Ata</h3>
+                    <p>Ashirvaad Ata 1KG</p>
+                    <div class="price">
+                        <span class="new-price">₹49</span>
+                        <span class="old-price">₹99</span>
+                    </div>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            
+                <div class="card">
+                    <img src="./IMG/Shreyash Bhagwat Pic.png" alt="Product 5">
+                    <h3>Ashirvaad Ata</h3>
+                    <p>Ashirvaad Ata 1KG</p>
+                    <div class="price">
+                        <span class="new-price">₹49</span>
+                        <span class="old-price">₹99</span>
+                    </div>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            
+                <div class="card">
+                    <img src="./IMG/Shreyash Bhagwat Pic.png" alt="Product 6">
+                    <h3>Ashirvaad Ata</h3>
+                    <p>Ashirvaad Ata 1KG</p>
+                    <div class="price">
+                        <span class="new-price">₹49</span>
+                        <span class="old-price">₹99</span>
+                    </div>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            
+                <div class="card">
+                    <img src="./IMG/Shreyash Bhagwat Pic.png" alt="Product 7">
+                    <h3>Ashirvaad Ata</h3>
+                    <p>Ashirvaad Ata 1KG</p>
+                    <div class="price">
+                        <span class="new-price">₹49</span>
+                        <span class="old-price">₹99</span>
+                    </div>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            
+                <div class="card">
+                    <img src="./IMG/Shreyash Bhagwat Pic.png" alt="Product 8">
+                    <h3>Ashirvaad Ata</h3>
+                    <p>Ashirvaad Ata 1KG</p>
+                    <div class="price">
+                        <span class="new-price">₹49</span>
+                        <span class="old-price">₹99</span>
+                    </div>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            
+                <div class="card">
+                    <img src="./IMG/Shreyash Bhagwat Pic.png" alt="Product 9">
+                    <h3>Ashirvaad Ata</h3>
+                    <p>Ashirvaad Ata 1KG</p>
+                    <div class="price">
+                        <span class="new-price">₹49</span>
+                        <span class="old-price">₹99</span>
+                    </div>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            
+                <div class="card">
+                    <img src="./IMG/Shreyash Bhagwat Pic.png" alt="Product 10">
+                    <h3>Ashirvaad Ata</h3>
+                    <p>Ashirvaad Ata 1KG</p>
+                    <div class="price">
+                        <span class="new-price">₹49</span>
+                        <span class="old-price">₹99</span>
+                    </div>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+            
+            <h2 class="section-title">Select Category Wise</h2>
+            <div id="chat">
+                <div class="category-container">
+                    <div class="category">
+                        <img src="./IMG/Shreyash Bhagwat Pic.png" alt="Groceries">
+                        <p>Groceries</p>
+                    </div>
+                    <div class="category">
+                        <img src="./IMG/Shreyash Bhagwat Pic.png" alt="Fruits">
+                        <p>Fruits</p>
+                    </div>
+                    <div class="category">
+                        <img src="./IMG/Shreyash Bhagwat Pic.png" alt="Vegetables">
+                        <p>Vegetables</p>
+                    </div>
+                    <div class="category">
+                        <img src="./IMG/Shreyash Bhagwat Pic.png" alt="Toys">
+                        <p>Toys</p>
+                    </div>
+                    <div class="category">
+                        <img src="./IMG/Shreyash Bhagwat Pic.png" alt="Electronics">
+                        <p>Electronics</p>
+                    </div>
+                    <div class="category">
+                        <img src="./IMG/Shreyash Bhagwat Pic.png" alt="Chocolates">
+                        <p>Chocolates</p>
+                    </div>
+                    <div class="category">
+                        <img src="./IMG/Shreyash Bhagwat Pic.png" alt="Furniture">
+                        <p>Furniture</p>
+                    </div>
+                    <div class="category">
+                        <img src="./IMG/Shreyash Bhagwat Pic.png" alt="Clothing">
+                        <p>Clothing</p>
+                    </div>
+                    <div class="category">
+                        <img src="./IMG/Shreyash Bhagwat Pic.png" alt="Books">
+                        <p>Books</p>
+                    </div>
+                    <div class="category">
+                        <img src="./IMG/Shreyash Bhagwat Pic.png" alt="Sports">
+                        <p>Sports</p>
+                    </div>
+                    <div class="category">
+                        <img src="./IMG/Shreyash Bhagwat Pic.png" alt="Furniture">
+                        <p>Furniture</p>
+                    </div>
+                    <div class="category">
+                        <img src="./IMG/Shreyash Bhagwat Pic.png" alt="Clothing">
+                        <p>Clothing</p>
+                    </div>
+                    <div class="category">
+                        <img src="./IMG/Shreyash Bhagwat Pic.png" alt="Books">
+                        <p>Books</p>
+                    </div>
+                    <div class="category">
+                        <img src="./IMG/Shreyash Bhagwat Pic.png" alt="Sports">
+                        <p>Sports</p>
+                    </div>
+                    <div class="category">
+                        <img src="./IMG/Shreyash Bhagwat Pic.png" alt="Furniture">
+                        <p>Furniture</p>
+                    </div>
+                    <div class="category">
+                        <img src="./IMG/Shreyash Bhagwat Pic.png" alt="Clothing">
+                        <p>Clothing</p>
+                    </div>
+                    <div class="category">
+                        <img src="./IMG/Shreyash Bhagwat Pic.png" alt="Books">
+                        <p>Books</p>
+                    </div>
+                    <div class="category">
+                        <img src="./IMG/Shreyash Bhagwat Pic.png" alt="Sports">
+                        <p>Sports</p>
+                    </div>
+                </div>
+            </div>
+            
+        </body>
+    </html>
