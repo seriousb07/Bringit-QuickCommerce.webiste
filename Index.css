@@ -225,7 +225,7 @@ h1 {
     overflow: hidden; /* Prevent scrolling of the entire page */
     position: absolute; /* Ensure it's a positioned container */
     display: flex;
-    top: 780px;
+    top: 600px;
     justify-content: center;
 }
 
